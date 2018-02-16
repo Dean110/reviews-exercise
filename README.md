@@ -9,22 +9,22 @@ Week 5 was an week learning about dependency injection, Spring Framework, and Th
 ## Tasks
 Required Tasks
 - [x] Create/configure a Spring Boot/MVC application.
-- [ ] Create a `Review` class for the content of reviews. Its instance variables (attributes) should include:
-	- [ ] id (make this of type `long` – you’ll find out why later) – just use arbitrary, unique numbers for these ids
-	- [ ] title
-	- [ ] image url
-	- [ ] review category
-	- [ ] content
-	- [ ] whatever other things you’d like to include. Some ideas:
+- [x] Create a `Review` class for the content of reviews. Its instance variables (attributes) should include:
+	- [x] id (make this of type `long` – you’ll find out why later) – just use arbitrary, unique numbers for these ids
+	- [x] title
+	- [x] image url
+	- [x] review category
+	- [x] content
+	- [x] whatever other things you’d like to include. Some ideas:
 		* date
-		* description/synopsis
-		* Stretch Task: tags (this should probably be a `Collection`)
-	- [ ] *accessor* (`get*` methods) that return information about review attributes. These will allow your Thymeleaf templates to display information about reviews.
-- [ ] Create a `ReviewRepository` class
-	- [ ] This class should be annotated properly so that it can be injected into ReviewsController.
-	- [ ] It should have a constructor that creates your Review instances and populates a Map that stores your reviews, using each review’s id as the map key.
-	- [ ] It should have a method to find all reviews
-	- [ ] It should have a method to find one review by id
+		* - [x] description/synopsis
+		* - [ ] Stretch Task: tags (this should probably be a `Collection`)
+	- [x] *accessor* (`get*` methods) that return information about review attributes. These will allow your Thymeleaf templates to display information about reviews.
+- [x] Create a `ReviewRepository` class
+	- [x] This class should be annotated properly so that it can be injected into ReviewsController.
+	- [x] It should have a constructor that creates your Review instances and populates a Map that stores your reviews, using each review’s id as the map key.
+	- [x] It should have a method to find all reviews
+	- [x] It should have a method to find one review by id
 - [ ] Create a ReviewsController class.
 	- [ ] apply proper annotation
 	- [ ] It should inject…something appropriately

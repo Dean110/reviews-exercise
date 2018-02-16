@@ -6,6 +6,8 @@ public class Review {
 	private String title;
 	private String imageUrl;
 	private String category;
+	private String content;
+	private String tldr;
 
 	public Long getId() {
 		return id;
@@ -30,9 +32,6 @@ public class Review {
 	public String getTldr() {
 		return tldr;
 	}
-
-	private String content;
-	private String tldr;
 
 	public Review(Long id, String title, String imageUrl, String category, String content, String tldr) {
 

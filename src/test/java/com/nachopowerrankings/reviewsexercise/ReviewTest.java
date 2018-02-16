@@ -23,6 +23,5 @@ public class ReviewTest {
 		assertThat(underTest.getCategory(), is(CATEGORY));
 		assertThat(underTest.getContent(), is(CONTENT));
 		assertThat(underTest.getTldr(), is(TLDR));
-
 	}
 }
