@@ -55,9 +55,9 @@ We use `th:each` to iterate over collections in Thymeleaf. If I had a collection
 `<div th:each="widget: ${widgets}" th:text="${widget.name}" />`
 This would result in something like the following, given the names “fee”, “fie”, and “foe”:
 
-`<div>fee</div>
-<div>fie</div>
-<div>foe</div>`
+`<div>fee</div>`
+`<div>fie</div>`
+`<div>foe</div>`
 (See the tutorial section on iteration.)
 
 Link URLs
