@@ -18,8 +18,8 @@ public class ReviewRepository {
 				"Fast Food",
 				"This is the nickel of the nacho world, ubiquitous, yet not really necessary. However, it does provide a stable baseline that other nachos have to acheive to be considered nachos. The chips are fresh with a crunch and adequete saltiness.  The nacho cheese is the goold standard for fast food cheese sauce, creamy, hot, and smooth in a way that only processed cheese can achieve.  Toppings are minimal, but they work to add value to the dish. The taco beef is classic, sour cream and tomatoes add a coolness that helps contrast the sharpness of the cheese sauce, but the refried beans often miss the mark being too clumpy most of the time.",
 				"A baseline C, better than not having nachos.");
-		Review tacoBellNachosBellGrande = new Review(101L, "Taco Bell Nachos Supreme", "/images/NachosBellGrande.jpg",
-				"Fast Food",
+		Review tacoBellNachosBellGrande = new Review(101L, "Taco Bell Nachos Bell Grande",
+				"/images/NachosBellGrande.jpg", "Fast Food",
 				"Taco Bell's premium nachos offering is a larger version of their Nachos Supreme. There is nothing to seperate it from it's smaller brethern. This isn't a bad thing. As we described in our review of the Nachos Supreme, the ingredients used are adequete, but nothing makes the Nachos Bell Grande stand out from the rest.",
 				"A bigger version of the Nachos Supreme");
 		Review wikipediaNachos = new Review(102L, "Wikipedia Nachos", "/images/wikiNachosSupreme.jpg", "Home Made",

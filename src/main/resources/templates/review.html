@@ -3,19 +3,22 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<title th:text="${review.title}"></title>
+<title>A Review</title>
 </head>
 
 <body>
 
 	<header>
-		<h1> A Course </h1>
+		<h1> A Review </h1>
 	</header>
 
-	<div th:each="course: ${courses}">
-		<h2 th:text="${course.name}"></h2>
-		<h2 th:text="${course.description}"></h2>
-		<a href="http://localhost:8080/courses">Back to home</a>
+	<div th:each="review: ${reviews}">
+		<h2 th:text="${review.title}"></h2>
+		<p th:text="${review.content}"></p>
+		
+		<img th:src="${review.imageUrl}" alt="Picture of Nachos"/> 
+		<h2 th:text="${review.tldr}"></h2>
+		<a href="http://localhost:8080/reviews">Back to home</a>
 	</div>
 
 </body>
