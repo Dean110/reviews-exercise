@@ -2,15 +2,16 @@
 
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head>
-<title>A Review</title>
+<head th:each="review: ${reviews}">
+<title th:text="${review.title}"></title>
 </head>
 
 <body>
 
 	<header>
-		<h1> A Review </h1>
+		<h1> A Modern Nacho Critque </h1>
 	</header>
+	
 
 	<div th:each="review: ${reviews}">
 		<h2 th:text="${review.title}"></h2>
