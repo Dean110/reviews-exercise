@@ -4,6 +4,27 @@
 
 <head th:each="review: ${reviews}">
 <title th:text="${review.title}"></title>
+<style>
+body {background-color: #ffff66;}
+h1 	{
+		color: black;
+	}
+a:link {
+    	color: #00e600;
+	}
+a:visited {
+    	color: #00e600;
+	}
+p   {color: red;}
+article {
+    	margin-top: 25px;
+    	margin-right: 150px;
+    	margin-left: 80px;
+    	margin-bottom: 25px;
+    	padding: 30px;
+    }
+img {float: right}
+</style>
 </head>
 
 <body>
@@ -14,11 +35,11 @@
 	
 
 	<article th:each="review: ${reviews}">
-		<h2 th:text="${review.title}"></h2>
+		<img th:src="${review.imageUrl}" alt="Picture of Nachos"/> 
+		<h3 th:text="${review.title}"></h3>
 		<p th:text="${review.content}"></p>
 		
-		<img th:src="${review.imageUrl}" alt="Picture of Nachos"/> 
-		<h2 th:text="${review.tldr}"></h2>
+		<h3 th:text="${review.tldr}"></h3>
 		<a href="http://localhost:8080/reviews">Back to home</a>
 	</article>
 
